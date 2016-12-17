@@ -1,0 +1,39 @@
+$std-font-stack: 'Source Sans Pro', sans-serif
+$base-color: hsl(0, 0%, 100%)
+$complement-color: hsl(0, 0%, 70%)
+$accent-color: hsl(0, 85%, 55%)
+$shadow-color: hsla(0, 0%, 0%, .3)
+
+body
+  background-color: $accent-color
+  margin: 0
+  padding: 0
+
+#navbar
+  background-color: $base-color
+  box-shadow: 0 4px 8px 0 $shadow-color
+  margin: 0
+  overflow: hidden
+  position: absolute
+  width: 100%
+
+  *
+    display: inline-block
+    padding: 0 .5em
+    text-decoration: none
+    vertical-align: middle
+
+  p
+    color: $complement-color
+    font: 2em $std-font-stack
+    line-height: 2em
+    margin: 0
+    padding: 8
+
+    &:hover
+      color: $accent-color
+
+  img
+    height: 3em
+    image-rendering: pixelated
+    width: 3em
