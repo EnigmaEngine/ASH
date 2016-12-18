@@ -5,7 +5,7 @@ $accent-color: hsl(0, 85%, 55%)
 $shadow-color: hsla(0, 0%, 0%, .3)
 
 body
-  background-color: $accent-color
+  background-color: $base-color
   margin: 0
   padding: 0
 
@@ -15,6 +15,7 @@ body
   margin: 0
   overflow: hidden
   position: absolute
+  top: 0
   width: 100%
 
   *
@@ -28,7 +29,7 @@ body
     font: 2em $std-font-stack
     line-height: 2em
     margin: 0
-    padding: 8
+    padding: .1em
 
     &:hover
       color: $accent-color
@@ -37,3 +38,35 @@ body
     height: 3em
     image-rendering: pixelated
     width: 3em
+
+#hero
+  background-color: $accent-color
+  box-shadow: 0 4px 8px 0 $shadow-color
+  height: 20em
+  overflow: hidden
+  position: relative
+  top: 4em
+  width: 100%
+  z-index: -1
+
+  p
+    color: $base-color
+    font-family: $std-font-stack
+    margin: 0
+    text-align: center
+
+  .wheel
+    *
+      display: none
+      position: relative
+
+  .waterfall
+    display: block
+    position: relative
+
+  #name
+    font-size: 5em
+    padding: 1em 0 0 .25em
+
+  #title
+    font-size: 2em
