@@ -6,8 +6,6 @@ waterfall = () ->
     { duration: 1000 }
   )
 
-# Please clean up this messy wheel function.
-# Nesting all of the code inside a done property of the first animate is nasty
 wheel = (curr) ->
   curr.animate(
     { opacity: 0, left: "-10em" },
