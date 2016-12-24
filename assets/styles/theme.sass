@@ -1,6 +1,6 @@
 $std-font-stack: 'Source Sans Pro', sans-serif
 $base-color: hsl(0, 0%, 100%)
-$complement-color: hsl(0, 0%, 70%)
+$complement-color: hsl(0, 0%, 50%)
 $accent-color: hsl(0, 85%, 55%)
 $shadow-color: hsla(0, 0%, 0%, .3)
 
@@ -41,7 +41,6 @@ body
 
 #hero
   background-color: $accent-color
-  box-shadow: 0 4px 8px 0 $shadow-color
   height: 20em
   overflow: hidden
   position: relative
@@ -70,3 +69,49 @@ body
 
   #title
     font-size: 2em
+
+#content
+  background-color: $base-color
+  position: relative
+  padding: 0 0 2em 0
+  top: 4em
+
+  > *
+    display: inline-block
+    position: relative
+    vertical-align: middle
+
+  #text-pane
+    width: 55% - 0.5%
+
+    *
+      position: relative
+      margin: 0
+
+    p
+      color: $complement-color
+      font-family: $std-font-stack
+      font-size: 2em
+      text-align: justify
+      padding: .5em 1em 0
+      text-indent: 2em
+
+    #greeting
+      text-align: left
+      text-indent: 0
+
+    #signatory
+      text-align: right
+      text-indent: 0
+
+  #img-pane
+    width: 45% - 0.5%
+
+    *
+      position: relative
+      margin: 0
+
+    img
+      box-shadow: 0 4px 8px 0 $shadow-color, 0 6px 20px 0 $shadow-color
+      left: 10%
+      width: 80%
