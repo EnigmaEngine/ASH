@@ -34,14 +34,27 @@ body
     &:hover
       color: $accent-color
 
-  img
-    height: 3em
-    image-rendering: pixelated
-    width: 3em
+  #id-block
+    img
+      height: 3em
+      image-rendering: pixelated
+      width: 3em
+
+  #nav-block
+    position: absolute
+    padding: 0
+    left: 50%
+    transform: translate(-50%,0)
+
+    .vDivider
+      background-color: $accent-color
+      padding: 0
+      height: 3em
+      width: 2px
 
 #hero
   background-color: $accent-color
-  height: 20em
+  height: 15em
   overflow: hidden
   position: relative
   top: 4em
@@ -65,7 +78,7 @@ body
 
   #name
     font-size: 5em
-    padding: 1em 0 0
+    padding: .6em 0 0
 
   #title
     font-size: 2em
@@ -73,7 +86,7 @@ body
 #content
   background-color: $base-color
   position: relative
-  padding: 0 0 2em 0
+  padding: 0 0 1em 0
   top: 4em
 
   > *
@@ -112,6 +125,6 @@ body
       margin: 0
 
     img
-      box-shadow: 0 4px 8px 0 $shadow-color, 0 6px 20px 0 $shadow-color
+      box-shadow: 0 4px 8px 0 $shadow-color
       left: 10%
       width: 80%
