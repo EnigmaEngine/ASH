@@ -1,7 +1,7 @@
 $std-font-stack: 'Source Sans Pro', sans-serif
 $base-color: hsl(0, 0%, 100%)
 $complement-color: hsl(0, 0%, 50%)
-$accent-color: hsl(0, 85%, 55%)
+$accent-color: hsl(0, 90%, 55%)
 $shadow-color: hsla(0, 0%, 0%, .3)
 
 body
@@ -29,27 +29,23 @@ body
     font: 2em $std-font-stack
     line-height: 2em
     margin: 0
-    padding: .1em
 
     &:hover
       color: $accent-color
 
-  #id-block
-    img
-      height: 3em
-      image-rendering: pixelated
-      width: 3em
+  .page-selected
+    color: $accent-color
 
   #nav-block
-    position: absolute
-    padding: 0
-    left: 50%
-    transform: translate(-50%,0)
+    img
+      image-rendering: pixelated
+      image-rendering: -moz-crisp-edges
+      width: 3.1em
 
-    .vDivider
+    .v-divider
       background-color: $accent-color
-      padding: 0
       height: 3em
+      padding: 0
       width: 2px
 
 #hero
@@ -76,17 +72,24 @@ body
     display: block
     position: relative
 
+  #title
+    font-size: 2em
+
+  #text
+    font-size: 2em
+    left: 50%
+    padding: 1em 0 0
+    transform: translate(-50%, 0)
+    width: 70%
+
   #name
     font-size: 5em
     padding: .6em 0 0
 
-  #title
-    font-size: 2em
-
 #content
   background-color: $base-color
+  padding: 0 0 1em
   position: relative
-  padding: 0 0 1em 0
   top: 4em
 
   > *
@@ -95,18 +98,18 @@ body
     vertical-align: middle
 
   #text-pane
-    width: 55% - 0.5%
+    width: 55% - .5%
 
     *
-      position: relative
       margin: 0
+      position: relative
 
     p
       color: $complement-color
       font-family: $std-font-stack
       font-size: 2em
-      text-align: justify
       padding: .5em 1em 0
+      text-align: justify
       text-indent: 2em
 
     #greeting
@@ -118,11 +121,11 @@ body
       text-indent: 0
 
   #img-pane
-    width: 45% - 0.5%
+    width: 45% - .5%
 
     *
-      position: relative
       margin: 0
+      position: relative
 
     img
       box-shadow: 0 4px 8px 0 $shadow-color
