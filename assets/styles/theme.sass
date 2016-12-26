@@ -9,6 +9,12 @@ body
   margin: 0
   padding: 0
 
+.waterfall
+  display: block
+  opacity: 0
+  position: relative
+  top: -25px
+
 #navbar
   background-color: $base-color
   box-shadow: 0 4px 8px 0 $shadow-color
@@ -70,7 +76,6 @@ body
 
   .waterfall
     display: block
-    position: relative
 
   #title
     font-size: 2em
@@ -87,6 +92,48 @@ body
     padding: .6em 0 0
 
 #content
+  position: relative
+  top: 4em
+
+  *
+    margin: 0
+    padding: 0 0 1em
+    position: relative
+
+  p
+    font-family: $std-font-stack
+    font-size: 1.75em
+    padding: .5em 0 0
+    text-align: justify
+    text-indent: 2em
+
+  .white-pane
+    background-color: $base-color
+    color: $complement-color
+
+    #text
+      left: 7.5%
+      width: 70%
+
+      .header
+        font-size: 2.5em
+        text-align: left
+        text-indent: 0
+
+  .red-pane
+    background-color: $accent-color
+    color: $base-color
+
+    #text
+      left: 22.5%
+      width: 70%
+
+      .header
+        font-size: 2.5em
+        text-align: right
+        text-indent: 0
+
+#split-content
   background-color: $base-color
   padding: 0 0 1em
   position: relative
