@@ -1,11 +1,11 @@
 wheelTimeout = 4000
-waterfallPreempt = 200
+waterfallPreempt = 50
 
 waterfall = () ->
   $(".waterfall").each((i) ->
-    obj = $(this).offset().top + $(this).outerHeight()
+    obj = $(this).offset().top
     win = $(window).scrollTop() + $(window).height()
-    win += waterfallPreempt
+    win -= waterfallPreempt
     if win > obj
       $(this).animate({ opacity: 1, top: 0 }, 1000)
   )
