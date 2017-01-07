@@ -21,7 +21,8 @@ wheel = (curr) ->
         next = curr.next()
       next.show().css({ "opacity": "0", "left": "10em" }).animate(
         { opacity: 1, left: 0 },
-        { duration: 500, "queue": false, done: setTimeout((() -> wheel(next)),wheelTimeout)}
+        { duration: 500, "queue": false
+        , done: setTimeout((() -> wheel(next)),wheelTimeout)}
       ) }
   )
 
